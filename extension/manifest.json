@@ -1,0 +1,21 @@
+{
+  "name": "claimsforce devtools",
+  "version": "1.0",
+  "description": "Toolset for easier development of the claimsforce product.",
+  "permissions": ["webRequest", "storage"],
+  "host_permissions": [
+    "*://*.claimsforce.com/",
+    "*://*.eu-central-1.amazonaws.com/Prod/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "images/claimsforce.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "128": "images/claimsforce.png"
+  },
+  "manifest_version": 3
+}
